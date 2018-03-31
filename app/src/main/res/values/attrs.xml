@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmileyLoadingView">
+        <!-- animation durationSeconds -->
+        <attr name="durationSeconds" format="integer"/>
+        <!-- stroke width -->
+        <attr name="strokeWidth" format="dimension"/>
+        <!-- stroke color -->
+        <attr name="strokeColor" format="color"/>
+        <!-- animation repeat count -->
+        <attr name="animRepeatCount" format="integer"/>
+    </declare-styleable>
+</resources>

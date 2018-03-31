@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#FFD4D6D7</color>
+    <color name="darkGrey">#FF4A4B4B</color>
+    <color name="lightGrey">#F0F3F3</color>
+    <color name="darkenGrey">#303030</color>
+    <color name="drawableComponentBgGreen">#FF25CC1C</color>
+    <color name="colorOffWhiteBg">#FFF7F7F7</color>
+    <color name="centerLock_item_disable_bg">#F6F6F6</color>
+    <color name="textColorDisabled">#FF9E9E9E</color>
+    <color name="colorControlNormal">#FFE6E6E6</color>
+    <color name="textColorSecondary">#FF757575</color>
+    <color name="textColorPrimary">#FF212121</color>
+    <color name="textColorRed">#FFF00F00</color>
+    <color name="lightBlue">#FFD8DDF5</color>
+    <color name="viewBorderColor">#FFBBBBB9</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="textWhiteDull">#FFF3F3F3</color>
+    <color name="yellow">#ffdd00</color>
+    <color name="yellowBorder">#FFF1C600</color>
+    <color name="orange_light">#ef7b18</color>
+    <color name="colorOverlay">#50ffffff</color>
+    <color name="black_overlay">#53d7d7d7</color>
+    <color name="chat_typing_box_border">#cfcfcf</color>
+    <color name="buttonColorWhite">#FFFFFFFF</color>
+    <color name="buttonColorWhitePressed">#70B3E5FC</color>
+    <color name="signUp_button_selectedBg_color">#ff5e95c6</color>
+    <color name="signUp_button_bg_color">#246FC6</color>
+    <color name="green">#f552b359</color>
+    <color name="statusColor">#FF212121</color>
+    <color name="lightYellow">#ffffbb</color>
+    <color name="textWhite">#FFFFFFFF</color>
+
+    <color name="common_action_bar_splitter">#FF116CB3</color>
+
+
+    <color name="colorLtGray">#FFCCCCCC</color>
+    <color name="appColorPrimary">#FF116CB3</color>
+    <color name="appColorPrimaryDark">#FF1064a9</color>
+    <color name="appColorPrimaryLight">#FFB3E5FC</color>
+    <color name="appColorPrimaryExtraLight">#70B3E5FC</color>
+    <color name="appTextColorPrimary">#FF212121</color>
+    <color name="appTextColorSecondary">#FF757575</color>
+    <color name="appTextColorDisabled">#FF9E9E9E</color>
+    <color name="appColorTransparent">#00000000</color>
+    <color name="appColorLtGray">#FFCCCCCC</color>
+    <color name="appColorPrimaryTransparent">#90116CB3</color>
+    <color name="appcolorActionBarBackground">#FFFFFFFF</color>
+    <color name="spinnerItem">#AAAAAA</color>
+    <color name="editText">#AAAAAA</color>
+    <color name="buttonText">#EEEEEE</color>
+    <color name="boldDarkGrey">#0C1117</color>
+    <color name="headerText">#EEEEEE</color>
+    <color name="appcolorSeperatorBackground">#e9e9e9</color>
+    <color name="blueBackground">#1773CA</color>
+    <color name="mapDirectionColor">#2DBAE4</color>
+    <color name="darkViolet">#303030</color>
+    <color name="goldenYellow">#CA9C34</color>
+    <color name="brown">#7B330B</color>
+    <color name="light_yellow">#FFFDDB</color>
+
+
+</resources>

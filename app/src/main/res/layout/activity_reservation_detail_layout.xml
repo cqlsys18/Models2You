@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:id="@+id/resDetailMainLinearLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView android:id="@+id/resDetailTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/res_details_title_text"
+                android:textColor="@color/colorLtGray"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textSize="@dimen/reservation_detail_title_text_size"/>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:fillViewport="true">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/resDetailNameTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/res_details_name_text"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:textColor="@color/colorLtGray" />
+
+                    <TextView
+                        android:id="@+id/resDetailNameText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/resDetailNameTitle"
+                        android:paddingLeft="10dp"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/resDetailBookDateTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailNameTitle"
+                        android:text="@string/res_details_book_date_text"
+                        android:textColor="@color/colorLtGray" />
+
+                    <TextView
+                        android:id="@+id/resDetailBookDateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/resDetailBookDateTitle"
+                        android:singleLine="true"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailNameText"
+                        android:layout_toRightOf="@+id/resDetailBookDateTitle"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/resDetailAppDateTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailBookDateTitle"
+                        android:text="@string/res_details_appointment_date_text"
+                        android:textColor="@color/colorLtGray" />
+
+                    <TextView
+                        android:id="@+id/resDetailAppDateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/resDetailAppDateTitle"
+                        android:singleLine="true"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailBookDateText"
+                        android:layout_toRightOf="@+id/resDetailAppDateTitle"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/resDetailAppTimeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailAppDateTitle"
+                        android:text="@string/res_details_appointment_time_text"
+                        android:textColor="@color/colorLtGray" />
+
+                    <TextView
+                        android:id="@+id/resDetailAppTimeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailAppDateText"
+                        android:layout_toRightOf="@+id/resDetailAppTimeTitle"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/resDetailDurationTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailAppTimeTitle"
+                        android:text="@string/res_details_duration_text"
+                        android:textColor="@color/colorLtGray" />
+
+                    <TextView
+                        android:id="@+id/resDetailDurationText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailAppTimeText"
+                        android:layout_toRightOf="@+id/resDetailDurationTitle"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/resDetailBookingRateTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailDurationTitle"
+                        android:text="@string/res_details_booking_rate_text"
+                        android:textColor="@color/colorLtGray" />
+
+                    <TextView
+                        android:id="@+id/resDetailBookingRateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailDurationText"
+                        android:layout_toRightOf="@+id/resDetailBookingRateTitle"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout android:id="@+id/locationLinearLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/resDetailBookingRateTitle"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin">
+
+                        <TextView
+                            android:id="@+id/resDetailLocationTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/reservation_detail_text_size"
+                            android:text="@string/res_details_location_text"
+                            android:textColor="@color/colorLtGray" />
+
+                        <TextView  android:id="@+id/resDetailLocationText"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:textSize="@dimen/reservation_detail_text_size"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/white"
+                            android:marqueeRepeatLimit ="marquee_forever"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:scrollHorizontally="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/resDetailWearTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/locationLinearLay"
+                        android:text="@string/res_details_wear_text"
+                        android:textColor="@color/colorLtGray" />
+
+                    <TextView
+                        android:id="@+id/resDetailWearText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/locationLinearLay"
+                        android:layout_toRightOf="@+id/resDetailWearTitle"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:ellipsize="end"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/resDetailCommentTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailWearTitle"
+                        android:text="@string/res_details_comment_text"
+                        android:textColor="@color/colorLtGray" />
+
+                    <TextView
+                        android:id="@+id/resDetailCommentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailWearText"
+                        android:layout_toRightOf="@+id/resDetailCommentTitle"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/resDetailStatusTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailCommentTitle"
+                        android:text="@string/res_details_status_text"
+                        android:textColor="@color/colorLtGray" />
+
+                    <TextView
+                        android:id="@+id/resDetailStatusText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailCommentText"
+                        android:layout_toRightOf="@+id/resDetailStatusTitle"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/resDetailTimeLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailStatusText"
+                        android:text="@string/model_time_left"
+                        android:visibility="gone"
+                        android:textColor="@color/colorLtGray" />
+
+                    <TextView
+                        android:id="@+id/resDetailTimeLeftText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/reservation_detail_text_title_top_margin"
+                        android:textSize="@dimen/reservation_detail_text_size"
+                        android:layout_below="@+id/resDetailStatusText"
+                        android:layout_toRightOf="@+id/resDetailTimeLeft"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:ellipsize="end"
+                        android:textColor="@color/white" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/resDetailTimeLeftText"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp">
+
+                        <RelativeLayout
+                            android:id="@+id/resDetailOnMyWayButtonPanel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:id="@+id/reservationDetailOnMyWayBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/black_background_button_selector"
+                                    android:text="@string/res_details_on_my_way"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:paddingRight="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:visibility="visible" />
+
+                                <Button
+                                    android:id="@+id/reservationDetailViewMapBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/black_background_button_selector"
+                                    android:text="@string/res_details_view_map"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:paddingRight="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+
+
+                            <Button
+                                android:id="@+id/reservationDetailCallClientBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/black_background_button_selector"
+                                android:text="@string/res_details_call_client"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:visibility="visible" />
+
+                            <Button
+                                android:id="@+id/reservationDetailCancelBookingBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/black_background_button_selector"
+                                android:text="@string/res_details_cancel"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/resDetailAcceptButtonPanel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <Button
+                                android:id="@+id/reservationDetailDenyBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:background="@drawable/black_background_button_selector"
+                                android:text="@string/res_details_deny"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:visibility="visible" />
+
+                            <Button
+                                android:id="@+id/reservationDetailAcceptBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:background="@drawable/black_background_button_selector"
+                                android:text="@string/res_details_accept"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,291 @@
+<resources>
+    <string name="app_name">Models2You-Model</string>
+
+    <!-- Main Activity Resource start -->
+    <string name="model_online_msg">Currently Accepting Booking</string>
+    <!-- Main Activity Resource end -->
+    <string name="permission">Please first turn on permission</string>
+    <!-- Update profile Resource Start -->
+    <string name="update_res_rate">RATE:</string>
+    <string name="update_res_hair_color">HAIR COLOR:</string>
+    <string name="update_res_favourites">HOBBIES:</string>
+    <string name="update_res_height">HEIGHT:</string>
+    <string name="update_res_eye_color">EYE COLOR:</string>
+    <string name="update_profile_alert_dialog_select_height_msg">Select the Height</string>
+    <string name="update_profile_rate_insufficient_msg">Hourly rate cannot be lower than $50</string>
+    <string name="enter_pass_text">Please enter new password</string>
+    <string name="hint_password_lower_case">password</string>
+    <string name="hint_confirm_password">confirm password</string>
+    <string name="error_password_not_matched">Password not matched</string>
+    <string name="change_password_success_msg">Password Change successfully</string>
+    <string name="register_success">Model Registered successfully</string>
+    <!-- Update profile Resource End -->
+
+    <!-- Button String resource start -->
+    <string name="button_login">LOGIN</string>
+    <string name="button_done">DONE</string>
+    <string name="button_next">Next</string>
+    <string name="button_update">UPDATE</string>
+    <string name="button_change_password">CHANGE PASSWORD</string>
+    <!-- Button String resource end -->
+
+    <!-- Login activity resource start -->
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_alert">Alert</string>
+    <!-- Login activity resource end -->
+
+    <!-- Main Activity resource Start -->
+
+    <string name="exit_text">Exit</string>
+    <string name="current_booking_count">%2d Current Booking</string>
+    <string name="main_total_earning">TOTAL EARNINGS:</string>
+    <string name="dollar_sign">$</string>
+    <string name="model_offline_msg">Not Accepting Booking</string>
+    <!-- Main Activity resource End -->
+
+    <!-- Splash resource start -->
+    <string name="splash_title">Models2You</string>
+    <string name="splash_desc">Copyright \u00A9 2017 Models2You, LLC. All rights reserved.</string>
+    <!-- Splash resource end -->
+
+    <!--Forget Password resource start-->
+    <string name="button_back">BACK</string>
+    <string name="text_forget_password">Forget password? \nPlease type your email address below</string>
+    <string name="text_send_my_password">Send my password</string>
+    <string name="alert_forget_pass_text">New password sent to your email address.</string>
+    <string name="web_view_retry">retry</string>
+    <string name="email_sent">email sent successfully</string>
+    <!--Forget Password resource end-->
+
+    <!-- alert dialog and Toast messages start -->
+    <string name="alert_dialog_title_token_empty">Your token is invalid , please login!</string>
+    <string name="alert_dialog_button_rate_this_exp">Rate this experience</string>
+    <string name="alert_dialog_button_extend">Extend</string>
+    <string name="alert_dialog_button_yes">Yes</string>
+    <string name="alert_dialog_button_ok">Ok</string>
+    <string name="alert_dialog_button_cancel">Cancel</string>
+    <string name="alert_dialog_view">View</string>
+    <string name="alert_dialog_deny">Deny</string>
+    <string name="alert_dialog_button_no">No</string>
+    <string name="alert_dialog_read_external_store_title">Permission necessary</string>
+    <string name="alert_dialog_read_external_store_message">External storage permission is necessary</string>
+    <string name="booked_successfully_msg">Booked successfully</string>
+    <string name="removed_successfully_msg">Removed successfully</string>
+    <string name="update_successfully_msg">Status update successfully</string>
+    <string name="rating_successfully_msg">Rating sent successfully</string>
+    <string name="logout_successfully_msg">Logout successfully</string>
+    <string name="updated_successfully_msg">Updated successfully</string>
+    <string name="development_in_progress_msg">Development in progress</string>
+    <!-- alert dialog and Toast messages end -->
+
+    <!-- Options Menu item resources start -->
+    <string name="update_profile">Update Profile</string>
+    <string name="manage_photo">Manage Photo</string>
+    <string name="current_reservation">Current Reservation</string>
+    <string name="cancel_booking_title_text">CANCELLED BOOKINGS</string>
+    <string name="cancel_reservation">Cancelled Reservation</string>
+    <string name="past_reservation">Past Reservation</string>
+    <string name="past_booking_title_text">PAST BOOKINGS</string>
+    <string name="pending_reservation">Pending Reservation</string>
+    <string name="completed_reservation">Completed Reservation</string>
+    <string name="view_basket">View Basket</string>
+    <string name="log_out">Logout</string>
+    <!-- Options Menu item resources end -->
+
+    <!-- HINT -->
+    <string name="hint_profile_nickname">NICKNAME</string>
+    <string name="hint_profile_username">USERNAME</string>
+    <string name="hint_profile_address">ADDRESS</string>
+    <string name="hint_profile_city">CITY</string>
+    <string name="hint_profile_state">STATE</string>
+    <string name="hint_profile_zipcode">ZIPCODE</string>
+    <string name="hint_profile_phone">PHONE</string>
+    <string name="hint_profile_phone_code">PHONE CODE</string>
+    <string name="hint_profile_birthday">BIRTHDAY</string>
+    <string name="hint_profile_interests">INTERESTS</string>
+    <string name="hint_profile_email">EMAIL</string>
+    <string name="hint_profile_password">PASSWORD</string>
+    <string name="hint_profile_name">NAME</string>
+    <!-- error messages -->
+    <string name="error_nickname">Please enter nickname</string>
+    <string name="error_name">Please enter name</string>
+    <string name="error_rate">Please enter rate</string>
+    <string name="error_favorites">Please enter favorites</string>
+    <string name="error_facebook_id">Please Enter Facebook Id</string>
+    <string name="error_hair_color">Please Enter Hair Color</string>
+    <string name="error_height">Please Enter Height</string>
+    <string name="error_eye_color">Please Enter Eye Color</string>
+    <string name="error_password_do_not_match">Password and Confirm Password do not match</string>
+    <string name="error_upload_picture">Please upload atleast 3 Pictures</string>
+    <string name="error_upload_main_picture">Please upload main profile picture</string>
+    <string name="error_name_invalid">Special characters not allowed</string>
+    <string name="error_password">Please enter password</string>
+    <string name="error_username">Please enter name</string>
+    <string name="error_business">Please enter Business name</string>
+    <string name="error_address">Please enter address</string>
+    <string name="error_signature">Please enter your signature</string>
+    <string name="error_city">Please enter city</string>
+    <string name="error_state">Please enter state</string>
+    <string name="error_zipcode">Please enter Zipcode</string>
+    <string name="error_account">Please enter Account Number</string>
+    <string name="error_phone">Please enter number</string>
+    <string name="error_birthday">Please enter birthday</string>
+    <string name="error_interest">Please enter interest</string>
+    <string name="error_what_to_wear">Please enter what to wear</string>
+    <string name="error_location">Please enter location</string>
+    <string name="error_latlng_location">unable to detect location</string>
+    <string name="error_when_checkbox">Please enter when</string>
+    <string name="error_date">Please enter date</string>
+    <string name="error_time">Please enter time</string>
+    <string name="error_comment">Please enter comment</string>
+    <string name="error_phone_length">Please enter 8 digit number</string>
+    <string name="error_camera_not_supported">Phone doesn\'t support camera</string>
+    <string name="error_user_already_logout">You are already logout</string>
+    <string name="error_user_login_required">Please login</string>
+    <string name="error_check_internet">Please Check Your Internet Connectivity</string>
+    <string name="error_checkout_uncheked_fields">Some of the fields in Model is empty, please fill to continue</string>
+    <string name="invalid_what_wear">Please Enter Valid Entry</string>
+    <string name="error_camera_permission_not_granted">Camera Permission not Granted</string>
+    <string name="invalid_email">Please enter valid email address</string>
+    <string name="error_invalid_password">Password is empty</string>
+    <string name="error_confirm_password">Please Enter Confirm Password</string>
+    <string name="error_instagram_id">Please Enter Instagram Id</string>
+    <string name="error_failed">failed</string>
+    <string name="error_no_points">No Points</string>
+    <string name="error_step_list">Direction not available</string>
+    <string name="error_invalid_input">Invalid input</string>
+    <string name="error_check_internet_to_add_internet">Please Check Your Internet Connectivity to add Photos</string>
+    <!-- Update User Profile end -->
+
+    <!-- Reservation detail booking status resource start -->
+    <string name="res_detail_accept_msg">You are now booked!\nThank you for confirming.\nRemember to shine bright! Give out great energy and vibes. Enjoy your time so that Models2you books you again. Thank you for being fabulous enjoy your gig.</string>
+    <string name="booking_status_denied">DENIED</string>
+    <string name="booking_status_completed">COMPLETED</string>
+    <string name="booking_status_cancelled">CANCELLED</string>
+    <string name="booking_status_on_my_way">ON MY WAY</string>
+    <string name="booking_status_delayed">DELAYED for %2d mins</string>
+    <string name="booking_status_arrived">ARRIVED</string>
+    <string name="booking_status_accepted">ACCEPTED</string>
+    <string name="booking_status_pending">PENDING</string>
+    <string name="txt_hours">%d HOURS</string>
+    <string name="txt_rate">$ %.2f</string>
+    <!-- Reservation detail booking status resource end -->
+
+    <!-- push notification sender id client's credentials -->
+    <string name="gcm_sender_id">562637074619</string>
+    <string name="gcm_server_key">AIzaSyDr6J9G_VNLyytHKr50EZow5FB08EEGESo</string>
+    <string name="google_map_key">AIzaSyBty7Nx6G9B-MxweZaLLPSEdjm8cp7aego</string>
+    <!--client's google account credentials -->
+
+    <!-- current location resource start -->
+    <string name="location_server_key">AIzaSyBM3dSx3Lon4z1pDvmI-MDFeeZO3-byWEk</string>
+    <!-- current location resource end -->
+
+    <!-- completed Reservation Screen resources start -->
+    <string name="completed_booking_title_text">COMPLETED BOOKINGS</string>
+    <!-- completed Reservation Screen resources End -->
+
+    <!-- Pending Reservation Screen resources start -->
+    <string name="pending_booking_title_text">PENDING BOOKINGS</string>
+    <!-- Pending Reservation Screen resources End -->
+    <!--Current Reservation Screen resources start-->
+    <string name="current_booking_title_text">CURRENT BOOKINGS</string>
+    <!--Current Reservation Screen resources end-->
+    <!-- Notification resource start -->
+    <string name="custom_notification_title">Are you still available?</string>
+    <!-- Notification resource end -->
+    <!-- Reservation detail resources start -->
+    <string name="res_details_title_text">Booking Details</string>
+    <string name="res_details_name_text">Name:</string>
+    <string name="res_details_book_date_text">Book Date:</string>
+    <string name="res_details_appointment_date_text">Appointment Date:</string>
+    <string name="res_details_appointment_time_text">Appointment Time:</string>
+    <string name="res_details_duration_text">Duration:</string>
+    <string name="res_details_booking_rate_text">Booking Rate:</string>
+    <string name="res_details_location_text">Location:</string>
+    <string name="res_details_wear_text">Wear:</string>
+    <string name="res_details_comment_text">Comment:</string>
+    <string name="res_details_status_text">Status:</string>
+    <string name="res_details_time_left_text">TIME LEFT:</string>
+    <string name="res_details_call_client">CALL</string>
+    <string name="res_details_on_my_way">ON MY WAY</string>
+    <string name="res_details_deny">DENY</string>
+    <string name="res_details_accept">ACCEPT</string>
+    <string name="res_details_cancel">CANCEL</string>
+    <string name="res_hint_reason">REASON</string>
+
+    <string name="res_details_cancel_alert_msg">Are you sure you want to cancel this booking?</string>
+    <string name="res_details_send">SEND</string>
+    <string name="res_detail_extend">EXTEND</string>
+    <string name="res_detail_extend_time_text">Extend Time</string>
+    <string name="res_detail_extend_msg_text">Please input number of hours you want to extend.</string>
+    <string name="res_details_alert_dialog_title_text">REASON</string>
+    <string name="res_detail_cancel_model_first_priority_msg">You are about to cancel this booking. There is a 50% charge penalty on this booking. Do you want to continue?</string>
+    <string name="res_detail_cancel_model_second_priority_msg">You are about to cancel this booking. Do you want to continue?</string>
+    <string name="res_detail_complete_model_duration_alert_msg">Congratulations!\nThank you for confirming!\nDo you want to leave a comment and rating?</string>
+    <string name="res_detail_rating_bar_empty_text">Rating should not be empty</string>
+    <string name="res_detail_rating_bar_comment_text">Comment should not be empty</string>
+    <string name="res_detail_complete_extend_text">Your time has been completed, Do you want to extend or rate this experience</string>
+    <string name="error_model_location_not_available">Model Location Not Available</string>
+    <string name="booking_detail_alert_dialog_deny_msg">Are you sure you want to deny this booking?</string>
+    <string name="res_details_view_map">VIEW MAP</string>
+    <!-- Reservation detail resources end -->
+
+    <!-- Current Location Map resources start-->
+    <string name="current_position">Current Position</string>
+    <string name="model_time_left">Time Left :</string>
+    <string name="curr_location_delay">DELAY</string>
+    <string name="curr_location_continue">CONTINUE</string>
+    <string name="curr_location_arrived">ARRIVED</string>
+    <!--Current Location Map resources end-->
+
+    <!-- Sign up resources start -->
+    <string name="sign_up_agree_message">BY CREATING AN ACCOUNT, YOU AGREE TO OUR</string>
+    <string name="sign_up_terms_message"><u>TERMS &amp; CONDITION, AND PRIVACY POLICY</u> </string>
+    <string name="sign_up_unable_to_capture_msg">Failed to show photo</string>
+    <string name="hint_profile_confirm_password">CONFIRM PASSWORD</string>
+    <string name="hint_profile_intagram_id">INSTAGRAM ID</string>
+    <string name="hint_profile_facebook_id">FACEBOOK ID</string>
+    <string name="hint_profile_eye_color">EYE COLOR</string>
+    <string name="hint_profile_hair_color">HAIR COLOR</string>
+    <string name="hint_profile_height">HEIGHT</string>
+    <string name="hint_profile_favorites">HOBBIES</string>
+    <string name="msg_for_additional_imgs">Tap on the pictures as we need three additional photos for approval</string>
+    <string name="msg_for_fill_info">Fill in your personal information below :</string>
+    <string name="invalid_password">Password Must be 6 Character Long</string>
+    <string name="invalid_name">Please Enter Valid Name</string>
+
+    <string name="label_add">Add</string>
+    <string name="label_edit">Edit</string>
+    <string name="label_done">Done</string>
+    <!-- Sign up resources end -->
+
+    <!-- Current location resource start-->
+    <string name="curr_location_time_left_msg">Time Left : %s</string>
+    <string name="curr_location_show_detail">Drive Navigation</string>
+    <string name="waiting_direction_msg">Waiting for direction &#8230;</string>
+    <!-- Current location resource end-->
+
+    <!-- Progress Dialog Message resource start-->
+    <string name="please_wait">Please wait!</string>
+    <string name="cannot_delete_profile_pic">Cannot delete as the current photo is a profile one now.</string>
+    <string name="cannot_delete_last_photo">Cannot delete the last 3 remaining photos.</string>
+    <string name="model_time_left_over">Time Over</string>
+    <string name="current_location">Current Location</string>
+    <string name="meeting_point">Meeting Point</string>
+    <!-- Progress Dialog Message resource end-->
+
+
+    <!--Twilio call-->
+    <string name="twilio_call_init_dialog_msg">Call initiated, please wait for incoming call</string>
+    <string name="auto_cancel_arrived_msg">Your session has started</string>
+    <string name="future_dev"><b>Future developments.</b> For the latest information about developments related to Form W-9 and its instructions, such as legislation enacted after they were published, go to www.irs.gov/FormW9. </string>
+    <string name="note_2"><b>Note:</b> If the account is in more than one name, see the instructions for line 1. Also see What Name and Number To Give the Requester for guidelines on whose number to enter.</string>
+    <string name="note_3"><b>Certification instructions:</b> You must cross out item 2 above if you have been notified by the IRS that you are currently subject to backup withholding because you have failed to report all interest and dividends on your tax return. For real estate transactions, item 2 does not apply. For mortgage interest paid, acquisition or abandonment of secured property, cancellation of debt, contributions to an individual retirement arrangement (IRA), and generally, payments other than interest and dividends, you are not required to sign the certification, but you must provide your correct TIN. See the instructions for Part II, later. </string>
+    <string name="note"><b>Note:</b> Check the appropriate box in the line above for the tax classification of the single-member owner.  Do not check LLC if the LLC is classified as a single-member LLC that is disregarded from the owner unless the owner of the LLC is another LLC that is not disregarded from the owner for U.S. federal tax purposes. Otherwise, a single-member LLC that is disregarded from the owner should check the appropriate box for the tax classification of its owner.</string>
+    <string name="gps_disable">GPS is disabled in your device. Please turn on location of your device</string>
+    <string name="turn_on">Turn on</string>
+</resources>

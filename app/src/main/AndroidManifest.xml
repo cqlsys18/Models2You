@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.models2you.model">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <permission android:name="com.models2you.model.permission.MAPS_RECEIVE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--
+         needed for older devices -
+        used to check app background / foreground status
+    -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- START Added for GCM -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <!-- END Added for GCM -->
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- START Added for GCM -->
+
+
+        <service android:name=".fcm.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- END Added for GCM -->
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.UpdateProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ManagePhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PendingReservationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CurrentReservationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PastReservationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CancelledReservationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PreviousReservationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ReservationDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CurrentLocationMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TermsConditionsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- soundcloud library - cropping of image -->
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <receiver android:name=".receiver.LogoutAlarmManagerReceiver" />
+
+        <service android:name=".service.LogoutService" />
+        <service android:name=".service.LocationTrackingService" />
+
+        <receiver
+            android:name=".widgets.CustomNotificationWidgetProvider"
+            android:icon="@mipmap/ic_launcher">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- amit tomar's credentials -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="8273333b6014208bf78f4a67e9a4d172d2703ab4" />
+
+        <activity
+            android:name=".ui.activity.SignupForm1_Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.activity.SignupForm2_Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.activity.SignupForm3_Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.activity.SignupForm4_Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

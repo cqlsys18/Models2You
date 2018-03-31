@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/OpenSans-Regular.ttf</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextView1" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/OpenSans-Regular.ttf</item>
+    </style>
+
+    <style name="NoActionTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView1</item>
+    </style>
+
+    <style name="DatePickerSpinner">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/colorPrimary</item>
+    </style>
+
+</resources>

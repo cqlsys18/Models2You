@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <Button
+                android:id="@+id/mp_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/button_selector_black"
+                android:text="@string/label_add"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/mp_edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_selector_black"
+                android:text="@string/label_edit"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/mp_done_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_selector_black"
+                android:text="@string/label_done"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mp_user_photo_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" />
+
+    </LinearLayout>
+
+</FrameLayout>
